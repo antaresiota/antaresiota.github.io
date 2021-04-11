@@ -1,0 +1,259 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial;
+}
+
+.products {
+    padding-right: 10%; 
+    padding-left: 10%
+}
+
+.product img {
+    height: 20px;
+}
+
+.product {
+    width: 9.3%;
+    font-family: Arial;
+    color: rgb(168, 166, 166);
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.product:hover {
+    color: white;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.top {
+    background-color: rgb(22, 21, 22); 
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-bottom-color: rgb(56, 55, 56);
+    height: 50px;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.mba {
+    display:inline; 
+    width: 50%; 
+    position: relative;
+    height: 50px;
+    vertical-align: middle;
+    font-size: 20px;
+    padding-left: 15.8%;
+}
+
+.buybutton {
+    background-color: rgba(2, 183, 255, 0.856); 
+    border-radius: 10px; 
+    border-color: white;
+}
+
+.mbar {
+    display: inline; 
+    float: right; 
+    vertical-align: middle;
+    position: relative;
+    font-family: Arial; 
+    padding-right: 15.8%; 
+    font-size: 12px;
+}
+
+.top2 {
+    background-color: rgb(22, 21, 22);
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.top2 a {
+    text-decoration: none;
+    color: rgb(0, 198, 248);
+}
+
+.top2 a:hover {
+    text-decoration: underline;
+}
+
+.arrow {
+    border: solid rgb(0, 198, 248);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+}
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.opening-vid {
+    width: auto;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 5%;
+    padding-left: 20%;
+}
+
+.mbaopening {
+    position: relative;
+    width: 100%;
+    align-self: center;
+}
+
+.mba-intro {
+    text-align: center;
+    animation-name: fadeinbottom;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(40%);
+    }
+    to { opacity: 1 }
+}
+
+.mba-intro-gradient {
+    background-color: red;
+    background-image: radial-gradient(ellipse at top, rgb(209, 211, 223), rgb(95, 95, 101));
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.mba-intro-para {
+    margin: 0% 20%;
+    text-align: center;
+    font-size: 28px;
+    color: rgb(160, 160, 165);
+}
+
+#mba-intro-m1 {
+    margin-left: 10%;
+    position: relative;
+    background-color: grey;
+    vertical-align: center;
+    height: 17%;
+    width: 17%;
+    float: left;
+}
+
+#mba-intro-m1a {
+    float: inline-end;
+    position: inherit;
+    font-size: 24px;
+    margin-right: 15%;
+    padding-top: 60px;
+    margin-bottom: 15%;
+}
+
+#event-link a, #m1-para a {
+    text-decoration: none;;
+    color: white;
+}
+
+#event-link a:hover, #m1-para a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#m1-title {
+    margin: 0 0 0 15%;
+    font: 70px arial bold;
+}
+
+#m1-para {
+    margin:  1% 35% 0 15%;
+    font: 25px arial;
+    color: rgb(160, 160, 165);
+}
+
+#m1-video {
+    width: 72%;
+    text-align: center;
+}
+
+#m1-video video{
+    width: 140%;
+}
+
+.cards {
+    width: auto;
+    height: 49em;
+    margin: 4% 1.65%;
+    background-image: linear-gradient(45deg, rgb(27, 66, 136), rgb(133, 56, 166));
+    border-radius: 2em;
+}
+
+#cpu-link {
+    font-size: 15px; 
+    position: absolute; 
+    margin: 48% 76% 4% 4%; 
+    padding: 0.5% 1%; 
+    background-color: transparent; 
+    border-radius: 50px; 
+    border-width: 2px; 
+    border-style: solid;
+}
+
+#cpu-link:hover {
+    cursor: pointer;
+}
+
+#gpu {
+    background-image: url(images/mba_graphics_vid.mp4);
+    background-size: cover;
+}
+
+#battery {
+    background-image: linear-gradient(0deg, rgb(21, 21, 22), rgb(31, 48, 37));
+    float: left;
+    margin: 4% 0.5% 0 1.65%;
+    width: 64%;
+}
+
+#battery-text { 
+    background-color: transparent; 
+    font-size: 70px; 
+    padding: 28% 19% 0 15%;
+    text-align: center;
+    font-weight: bold;
+    color: transparent;
+    background-position-y: -0%;
+    background-image: linear-gradient(rgb(77,210,102), white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    transition-duration: 1s;
+    transition: background ease;
+    background-size: auto 400%;
+}
+
+#thermal {
+    background-image: linear-gradient( 45deg, rgb(24,102,133), rgb(24,37,169));
+    float: right;
+    margin: 4% 1.65% 0 0.5%;
+    width: 31%;
+}
